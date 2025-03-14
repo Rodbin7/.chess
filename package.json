@@ -2,6 +2,10 @@
   "name": "chess",
   "type": "module",
   "version": "0.0.1",
+  "exports": {
+    ".": "./index.js",
+    "./*": "./*.js"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -9,6 +13,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.4.3"
+    "@astrojs/react": "^4.2.1",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "astro": "^5.4.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }
